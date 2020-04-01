@@ -2,6 +2,7 @@ using System.Reactive;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
+using Avalonia.Data;
 using ReactiveUI;
 
 namespace Paginator.Avalonia.View
@@ -17,7 +18,7 @@ namespace Paginator.Avalonia.View
         }
 
         public static readonly AvaloniaProperty<int> PageCountProperty =
-            AvaloniaProperty.Register<PaginatorControl, int>(nameof(PageCount));
+            AvaloniaProperty.Register<PaginatorControl, int>(nameof(PageCount),defaultBindingMode:BindingMode.TwoWay);
 
         public int PageCount
         {
@@ -30,7 +31,7 @@ namespace Paginator.Avalonia.View
         }
 
         public static readonly AvaloniaProperty<int> PageNumbProperty =
-            AvaloniaProperty.Register<PaginatorControl, int>(nameof(PageNumb));
+            AvaloniaProperty.Register<PaginatorControl, int>(nameof(PageNumb),defaultBindingMode:BindingMode.TwoWay);
 
         public int PageNumb
         {
