@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.9.6-prev1</PackageVersion>
+        <Authors>Lary&lt;f98f96@gmail.com&gt;</Authors>
+        <PackageProjectUrl>https://github.com/CreateLab/Paginator.Avalonia</PackageProjectUrl>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageTags>Avalonia</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <AvaloniaResource Include="**\*.xaml">
+            <SubType>Designer</SubType>
+        </AvaloniaResource>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="0.9.6" />
+      <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.6" />
+    </ItemGroup>
+
+</Project>

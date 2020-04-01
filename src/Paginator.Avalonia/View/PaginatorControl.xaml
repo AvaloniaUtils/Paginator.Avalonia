@@ -1,0 +1,67 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cc="clr-namespace:Paginator.Avalonia.View">
+    <Style Selector="cc|PaginatorControl">
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid ClipToBounds="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Button Classes="paginator-btn" Grid.Column="0" Margin="5" MinHeight="20" MinWidth="20"
+                            Command="{TemplateBinding BeginClickCommand}">
+                        <Path
+                            Fill="{Binding $parent[Button].Foreground}"
+                            Width="7"
+                            Height="12"
+                            Stretch="Uniform"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Data="F1 M 50,50 L 50,0 L40,0 L 40,100 L50,100 L50,50 L 100,0 L 100,100 L 50,50 Z" />
+                    </Button>
+                    <Button Classes="paginator-btn" Grid.Column="1" Margin="5" MinHeight="20" MinWidth="20"
+                            Command="{TemplateBinding PrevClickCommand}">
+                        <Path
+                            Fill="{Binding $parent[Button].Foreground}"
+                            Width="7"
+                            Height="12"
+                            Stretch="Uniform"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Data="F1 M 50,50  L 100,0 L 100,100 L 50,50 Z" />
+                    </Button>
+                    <TextBlock Classes="paginator-txt" Text="{TemplateBinding PageInfo}" Name="Page" Margin="5"
+                               Grid.Column="3" VerticalAlignment="Center" />
+                    <Button Classes="paginator-btn" Grid.Column="5" Margin="5" MinHeight="20" MinWidth="20"
+                            Command="{TemplateBinding NextClickCommand}">
+                        <Path
+                            Fill="{Binding $parent[Button].Foreground}"
+                            Width="7"
+                            Height="12"
+                            Stretch="Uniform"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Data="F1 M 100,50  L 50,0 L 50,100 L 100,50 Z" />
+                    </Button>
+                    <Button Classes="paginator-btn" Grid.Column="6" Margin="5" MinHeight="20" MinWidth="20"
+                            Command="{TemplateBinding EndClickCommand}">
+                        <Path
+                            Fill="{Binding $parent[Button].Foreground}"
+                            Width="7"
+                            Height="12"
+                            Stretch="Uniform"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Data="F1 M 100,50  L 50,0 L 50,100 L 100,50 L 100,0 L 110,0 L 110,100 L 100,100 L100,50 Z" />
+                    </Button>
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>
