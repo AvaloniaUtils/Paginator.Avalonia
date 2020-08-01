@@ -1,5 +1,5 @@
 # Paginator.Avalonia
-[[!nuget](https://img.shields.io/badge/10-nuget-blue)](https://www.nuget.org/packages/Paginator.Avalonia)
+[![nuget](https://img.shields.io/badge/10-nuget-blue)](https://www.nuget.org/packages/Paginator.Avalonia)
 
 # Example
 
