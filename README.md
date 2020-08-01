@@ -3,7 +3,7 @@
 
 # Example
 
-https://github.com/CreateLab/Paginator.Avalonia/blob/master/paginator.gif
+![](https://github.com/CreateLab/Paginator.Avalonia/blob/master/paginator.gif)
 
 # How to use
 Add `StyleInclude`
