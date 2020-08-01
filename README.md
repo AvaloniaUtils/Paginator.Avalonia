@@ -1,6 +1,10 @@
 # Paginator.Avalonia
 ![nuget](https://www.nuget.org/packages/Paginator.Avalonia)
 
+# Example
+
+https://github.com/CreateLab/Paginator.Avalonia/blob/master/paginator.gif
+
 # How to use
 Add `StyleInclude`
 ```xml
