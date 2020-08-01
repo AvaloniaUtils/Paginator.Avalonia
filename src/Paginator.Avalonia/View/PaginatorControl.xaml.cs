@@ -22,7 +22,7 @@ namespace Paginator.Avalonia.View
 
         public int PageCount
         {
-            get => GetValue(PageCountProperty);
+            get => (int) GetValue(PageCountProperty);
             set
             {
                 SetValue(PageCountProperty, value);
@@ -35,7 +35,7 @@ namespace Paginator.Avalonia.View
 
         public int PageNumb
         {
-            get => GetValue(PageNumbProperty);
+            get => (int) GetValue(PageNumbProperty);
             set
             {
                 SetValue(PageNumbProperty, value);
@@ -48,7 +48,7 @@ namespace Paginator.Avalonia.View
 
         private string PageInfo
         {
-            get => GetValue(PageInfoProperty);
+            get => (string) GetValue(PageInfoProperty);
             set => SetValue(PageInfoProperty, value);
         }
 
@@ -66,7 +66,7 @@ namespace Paginator.Avalonia.View
 
         public ReactiveCommand<Unit, Unit> NextClickCommand
         {
-            get => GetValue(NextClickCommandProperty);
+            get => (ReactiveCommand<Unit, Unit>) GetValue(NextClickCommandProperty);
             set => SetValue(NextClickCommandProperty, value);
         }
         private void NextClick()
@@ -79,7 +79,7 @@ namespace Paginator.Avalonia.View
 
         public ReactiveCommand<Unit, Unit> PrevClickCommand
         {
-            get => GetValue(PrevClickCommandProperty);
+            get => (ReactiveCommand<Unit, Unit>) GetValue(PrevClickCommandProperty);
             set => SetValue(PrevClickCommandProperty, value);
         }
 
@@ -93,7 +93,7 @@ namespace Paginator.Avalonia.View
 
         public ReactiveCommand<Unit, Unit> EndClickCommand
         {
-            get => GetValue(EndClickCommandProperty);
+            get => (ReactiveCommand<Unit, Unit>) GetValue(EndClickCommandProperty);
             set => SetValue(EndClickCommandProperty, value);
         }
 
@@ -107,7 +107,7 @@ namespace Paginator.Avalonia.View
 
         public ReactiveCommand<Unit, Unit> BeginClickCommand
         {
-            get => GetValue(BeginClickCommandProperty);
+            get => (ReactiveCommand<Unit, Unit>) GetValue(BeginClickCommandProperty);
             set => SetValue(BeginClickCommandProperty, value);
         }
 

@@ -15,13 +15,24 @@
 
     <Window.Styles>
         <StyleInclude Source="avares://Paginator.Avalonia/View/PaginatorControl.xaml" />
+        <Style Selector="TextBox">
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="AcceptsReturn" Value="True" />
+            <Setter Property="IsReadOnly" Value="True" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+        </Style>
+        <Style Selector="TextBox:focus /template/ Border#border">
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
     </Window.Styles>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding I}"></TextBlock>
+        <TextBox Text="{Binding I, Mode=OneWay}" FontSize="80"  FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center"></TextBox>
         <controls:PaginatorControl Name="PaginatorControl" Grid.Row="1" PageCount="7" PageNumb="{Binding I,Mode=TwoWay}" />
     </Grid>
 </Window>
