@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.9.6-prev1</PackageVersion>
+        <PackageVersion>0.10.2-rc1</PackageVersion>
         <Authors>Lary&lt;f98f96@gmail.com&gt;</Authors>
         <PackageProjectUrl>https://github.com/CreateLab/Paginator.Avalonia</PackageProjectUrl>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
@@ -15,8 +15,8 @@
         </AvaloniaResource>
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="0.10.0-preview2" />
-      <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-preview2" />
+      <PackageReference Include="Avalonia" Version="0.10.0-rc1" />
+      <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-rc1" />
     </ItemGroup>
 
 </Project>

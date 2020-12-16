@@ -18,7 +18,6 @@ namespace Paginator.Avalonia.Test
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToDebug()
                 .UseReactiveUI();
     }
 }
